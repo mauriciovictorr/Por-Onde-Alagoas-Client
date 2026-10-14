@@ -1,0 +1,12 @@
+# Diretórios e arquivos gerados pela Vercel CLI
+.vercel
+
+# Arquivos de ambiente locais
+.env
+.env.*
+
+# Arquivos temporários do sistema operacional e do editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
