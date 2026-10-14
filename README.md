@@ -12,6 +12,7 @@ Front-end estático (HTML, CSS e JavaScript em módulos ES) que consome a API co
 ├── js/
 │   ├── config.js     # URL base da API e timeout (ponto único de configuração)
 │   ├── api.js        # Camada de acesso HTTP à API (tratamento de erros e timeout)
+│   ├── carrossel.js  # Carrossel principal e rolagem da faixa de destaques
 │   └── app.js        # Orquestração da página e renderização
 ├── vercel.json       # Cabeçalhos de segurança e configuração de deploy
 └── README.md

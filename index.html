@@ -3,29 +3,229 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Por Onde Alagoas - plataforma de consulta de dados integrada à API corporativa." />
-    <title>Por Onde Alagoas</title>
+    <meta name="description" content="Por Onde Alagoas - plataforma corporativa de consulta de dados integrada à API corporativa." />
+    <title>Por Onde Alagoas | Consulta de dados</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header class="cabecalho">
-      <h1>Por Onde Alagoas</h1>
-      <p class="subtitulo">Consulta de dados</p>
+    <header class="topo">
+      <div class="topo-linha">
+        <a href="index.html" class="marca" aria-label="Por Onde Alagoas - página inicial">
+          <span class="marca-icone" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" focusable="false">
+              <path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z" fill="currentColor" />
+            </svg>
+          </span>
+          <span class="marca-texto">Por Onde Alagoas</span>
+        </a>
+
+        <nav class="navegacao" aria-label="Principal">
+          <a href="#destaques">Destinos</a>
+          <a href="#resultados">Consultas</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#contato">Contato</a>
+        </nav>
+
+        <a href="#contato" class="botao botao-secundario">Portal Parceiro</a>
+      </div>
+
+      <ul class="beneficios" aria-label="Diferenciais">
+        <li class="beneficio">
+          <span class="beneficio-icone" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" focusable="false">
+              <path d="M3 6h11v9h-1.5a2.5 2.5 0 0 0-5 0H3V6Zm12 3h3l3 3v3h-1.5a2.5 2.5 0 0 0-5 0H15V9Zm-7 9.5a1.5 1.5 0 1 0 0 .01ZM18 17.5a1.5 1.5 0 1 0 0 .01Z" fill="currentColor" />
+            </svg>
+          </span>
+          <div>
+            <strong>Praticidade</strong>
+            <span>Atendimento no local de hospedagem</span>
+          </div>
+        </li>
+        <li class="beneficio">
+          <span class="beneficio-icone" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" focusable="false">
+              <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm-1.2 14.4-3.6-3.6 1.4-1.4 2.2 2.2 4.6-4.6 1.4 1.4-6 6Z" fill="currentColor" />
+            </svg>
+          </span>
+          <div>
+            <strong>Confirmação imediata</strong>
+            <span>Comprovante enviado por e-mail</span>
+          </div>
+        </li>
+        <li class="beneficio">
+          <span class="beneficio-icone" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" focusable="false">
+              <path d="M3 6h18v12H3V6Zm2 2v2h14V8H5Zm0 4v4h6v-4H5Z" fill="currentColor" />
+            </svg>
+          </span>
+          <div>
+            <strong>Pagamento facilitado</strong>
+            <span>Formas de pagamento disponíveis no checkout</span>
+          </div>
+        </li>
+        <li class="beneficio">
+          <span class="beneficio-icone" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" focusable="false">
+              <path d="M7 2h2v2h6V2h2v2h2a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2V2Zm12 8H5v9h14v-9Z" fill="currentColor" />
+            </svg>
+          </span>
+          <div>
+            <strong>Experiência local</strong>
+            <span>Roteiros pensados para cada destino</span>
+          </div>
+        </li>
+      </ul>
     </header>
 
     <main class="conteudo">
-      <section class="barra-acoes" aria-label="Ações">
-        <button id="btn-atualizar" type="button">Atualizar</button>
-        <span id="status" class="status" role="status" aria-live="polite"></span>
+      <!-- Carrossel principal: slides de exemplo, sem conteúdo oficial -->
+      <section class="carrossel-principal" aria-roledescription="carrossel" aria-label="Destaques principais" data-carrossel>
+        <div class="slides">
+          <article class="slide ativo" aria-roledescription="slide" aria-label="1 de 3">
+            <div class="slide-texto">
+              <p class="etiqueta">Destino em destaque</p>
+              <h1>Conheça Alagoas com quem entende do assunto</h1>
+              <p class="slide-descricao">Passeios e experiências selecionados para cada perfil de viajante.</p>
+              <a href="#destaques" class="botao botao-primario">Ver experiências</a>
+            </div>
+            <div class="slide-imagem imagem-praia" role="img" aria-label="Imagem ilustrativa de praia"></div>
+          </article>
+          <article class="slide" aria-roledescription="slide" aria-label="2 de 3">
+            <div class="slide-texto">
+              <p class="etiqueta">Passeios</p>
+              <h2>Roteiros de um dia inteiro</h2>
+              <p class="slide-descricao">Combine atrações terrestres e náuticas em um único pacote.</p>
+              <a href="#destaques" class="botao botao-primario">Escolher roteiro</a>
+            </div>
+            <div class="slide-imagem imagem-mar" role="img" aria-label="Imagem ilustrativa de mar"></div>
+          </article>
+          <article class="slide" aria-roledescription="slide" aria-label="3 de 3">
+            <div class="slide-texto">
+              <p class="etiqueta">Pacotes flexíveis</p>
+              <h2>Monte a sua experiência</h2>
+              <p class="slide-descricao">Escolha os passeios e a quantidade de atividades que fazem sentido para a sua viagem.</p>
+              <a href="#destaques" class="botao botao-primario">Montar pacote</a>
+            </div>
+            <div class="slide-imagem imagem-cidade" role="img" aria-label="Imagem ilustrativa de cidade"></div>
+          </article>
+        </div>
+
+        <button type="button" class="seta seta-anterior" aria-label="Slide anterior" data-anterior>&#8249;</button>
+        <button type="button" class="seta seta-proximo" aria-label="Próximo slide" data-proximo>&#8250;</button>
+
+        <div class="indicadores" role="group" aria-label="Selecionar slide">
+          <button type="button" class="indicador ativo" aria-label="Slide 1" data-indice="0"></button>
+          <button type="button" class="indicador" aria-label="Slide 2" data-indice="1"></button>
+          <button type="button" class="indicador" aria-label="Slide 3" data-indice="2"></button>
+        </div>
       </section>
 
-      <section id="lista" class="lista" aria-label="Resultados"></section>
+      <!-- Destaques: cards de exemplo, sem preços reais -->
+      <section id="destaques" class="secao" aria-labelledby="titulo-destaques">
+        <header class="cabecalho-secao">
+          <h2 id="titulo-destaques">Destaques</h2>
+          <p>Experiências selecionadas para o seu roteiro</p>
+        </header>
 
-      <p id="mensagem" class="mensagem" hidden></p>
+        <div class="trilho-container">
+          <button type="button" class="seta seta-trilho seta-anterior-trilho" aria-label="Rolar para a esquerda" data-trilho-anterior>&#8249;</button>
+          <div class="trilho" data-trilho>
+            <article class="card-produto">
+              <div class="card-imagem imagem-praia">
+                <span class="selo selo-destaque">Mais vendido</span>
+                <span class="selo selo-categoria">Natureza</span>
+              </div>
+              <div class="card-corpo">
+                <h3>Passeio de barco pelas praias do litoral norte</h3>
+                <div class="card-rodape">
+                  <button type="button" class="botao botao-primario botao-pequeno">Reservar</button>
+                  <div class="preco">
+                    <span>Valor</span>
+                    <strong>A definir</strong>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="card-produto">
+              <div class="card-imagem imagem-mar">
+                <span class="selo selo-novidade">Novidade</span>
+                <span class="selo selo-categoria">Aventura</span>
+              </div>
+              <div class="card-corpo">
+                <h3>Trilha guiada com acesso a piscinas naturais</h3>
+                <div class="card-rodape">
+                  <button type="button" class="botao botao-primario botao-pequeno">Reservar</button>
+                  <div class="preco">
+                    <span>Valor</span>
+                    <strong>A definir</strong>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="card-produto">
+              <div class="card-imagem imagem-cidade">
+                <span class="selo selo-novidade">Novidade</span>
+                <span class="selo selo-categoria">Família</span>
+              </div>
+              <div class="card-corpo">
+                <h3>City tour com parada em pontos históricos</h3>
+                <div class="card-rodape">
+                  <button type="button" class="botao botao-primario botao-pequeno">Reservar</button>
+                  <div class="preco">
+                    <span>Valor</span>
+                    <strong>A definir</strong>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="card-produto">
+              <div class="card-imagem imagem-praia">
+                <span class="selo selo-categoria">Flexível</span>
+              </div>
+              <div class="card-corpo">
+                <h3>Pacote flexível com passeios à escolha</h3>
+                <div class="card-rodape">
+                  <button type="button" class="botao botao-primario botao-pequeno">Reservar</button>
+                  <div class="preco">
+                    <span>Valor</span>
+                    <strong>A definir</strong>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <button type="button" class="seta seta-trilho seta-proximo-trilho" aria-label="Rolar para a direita" data-trilho-proximo>&#8250;</button>
+        </div>
+        <p class="nota">Conteúdo de exemplo para validação do layout. Títulos, valores e imagens serão substituídos pelos dados oficiais.</p>
+      </section>
+
+      <!-- Consulta à API corporativa -->
+      <section id="resultados" class="secao" aria-labelledby="titulo-resultados">
+        <header class="cabecalho-secao">
+          <h2 id="titulo-resultados">Consulta de dados</h2>
+          <p>Resultados da API corporativa</p>
+        </header>
+        <div class="barra-acoes">
+          <button id="btn-atualizar" type="button" class="botao botao-primario">Atualizar</button>
+          <span id="status" class="status" role="status" aria-live="polite"></span>
+        </div>
+        <section id="lista" class="lista" aria-label="Lista de resultados"></section>
+        <p id="mensagem" class="mensagem" hidden></p>
+      </section>
+
+      <section id="sobre" class="secao secao-faixa">
+        <div>
+          <h2>Por Onde Alagoas</h2>
+          <p>Plataforma corporativa de consulta de dados. Texto institucional a ser definido pela área responsável.</p>
+        </div>
+      </section>
     </main>
 
-    <footer class="rodape">
-      <small>Ambiente de produção hospedado na Vercel</small>
+    <footer id="contato" class="rodape">
+      <div class="rodape-linha">
+        <span class="marca-texto">Por Onde Alagoas</span>
+        <small>Ambiente de produção hospedado na Vercel</small>
+      </div>
     </footer>
 
     <script type="module" src="js/app.js"></script>
